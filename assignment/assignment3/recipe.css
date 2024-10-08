@@ -1,0 +1,96 @@
+a:link{
+	color: #c26e00; 
+    font-size: 30px;
+    font-weight: bold;
+}  
+
+a:visited{
+	color: #00cddb;
+    font-size: 30px;
+    font-weight: bold;
+} 
+ 
+ a:hover{ 
+	color: #af0000; 
+    font-size: 30px;
+    font-weight: bold;
+} 
+
+body{
+    background-color: rgb(255, 220, 191);
+}
+
+h1{
+    background-color: azure;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+h2{
+    /* font-weight: bold; */
+    background-color: cornsilk;
+    padding-left: 10px;
+}
+
+div{
+    text-align: center;
+}
+
+#cinnamon_Main{
+    width: 200px;
+}
+
+#cinnamon_Ingre{
+    width: 250px;
+    height: 300px;
+    float: right;
+    
+}
+
+.flex_container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: rgb(255, 253, 226);
+    justify-content: center;
+}
+
+.flex_container > div{
+    border: 2px dotted rgb(224, 173, 64);
+    width: 400px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.div_display{
+    border: 2px solid rgb(224, 173, 64);
+    width: 200px;
+    display: inline-block; 
+}
+
+img{
+    width: 200px;
+    height: 250px;
+    padding: 20px;
+    background-color: #fffd73;
+}
+
+#TextStep{
+    margin-bottom: 10px;
+}
+
+
+.TextLeft{
+    margin-left: 10px;
+    text-align: left;
+}
+
+ul{
+    margin-top: -4px;
+    margin-left: -5px;
+    margin-bottom: 20px;
+}
+li{
+    margin-bottom: 10px;
+    margin-left: 15px;
+}

@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* ทำให้ body ครอบคลุมทั้งหน้าจอ */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #FFF8E8;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px; /* ปรับขนาดเป็นมาตรฐานที่อ่านง่าย */
+    color: #333; /* สีตัวอักษรทั่วไป */
+}
+
+/* ปรับคอนเทนต์ในกล่องให้ยืดเต็มหน้าจอ */
+.grid-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 20px;
+    width: 90%; 
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #F7EED3;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+/* จัดให้ Fname และ Lname อยู่ทางขวาของ PortImg */
+#header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* เปลี่ยนจาก center เป็น left */
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+/* ปรับขนาดและการจัดวางรูปภาพ */
+.PortImg {
+    width: 300px; /* กำหนดขนาดความกว้างที่สมดุล */
+    border: 5px solid #AAB396; /* เพิ่มขอบสีอ่อนเพื่อให้ดูเด่น */
+    object-fit: cover; /* ทำให้รูปขนาดเหมาะสม ไม่บิดเบี้ยว */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* เพิ่มเงาเบาๆ ใต้ภาพ */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* เพิ่มการเปลี่ยนแปลงนุ่มนวล */
+    float: left;
+}
+
+.PortImg:hover {
+    transform: scale(1.05); /* ขยายรูปเล็กน้อยเมื่อ hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* เพิ่มเงาให้ชัดขึ้นเมื่อ hover */
+}
+
+/* ปรับตำแหน่งของชื่อให้อยู่ทางขวาของภาพ */
+#name-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#Fname{
+    font-size: 4vw;
+    margin-left: 100px;
+}
+#Lname {
+    font-size: 4vw;
+    margin-left: 200px;
+}
+
+/* Center ข้อความหัวข้อ */
+.title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 0;
+}
+
+#aboutMe{
+    text-align: center;
+}
+
+#Hobbies, #Interests, #Skills {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#HobbiesList ul, #InterestsList ul, #SkillsList ul {
+    list-style: none;
+    padding: 0;
+}
+
+#HobbiesList li, #InterestsList li, #SkillsList li {
+    background-color: #f9f9f9;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* ปรับ footer ให้เต็มความกว้าง */
+#footer {
+    background-color: #AAB396;
+    color: #FFF8E8;
+    padding: 20px 0;
+    width: 100%;
+    text-align: left;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#footer-item1{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    margin-left: 30px;
+}
+#footer-item2{
+    display: flex;
+    flex-direction: column;
+}
+
+#footer-item2 h2{
+    display: flex;
+    flex-direction: column;
+}
+#footer-item2 p{
+    display: flex;
+    flex-direction: column;
+    padding-right: 40px;
+}
+
+/* ปรับให้รูปภาพในลิงก์มีขนาดที่เหมาะสม */
+a img {
+    width: px;
+    margin: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* ปรับการ hover สำหรับปุ่ม Assignment และ Project */
+}
+/* เมื่อ hover, ขยายขนาดและเพิ่มเงา */
+a img:hover {
+    transform: scale(1.05); /* ขยายขนาดเล็กน้อย */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* เพิ่มเงา */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: #674636;
+}
+a:hover {
+    color: #AAB396;
+}
+
+#main{
+    text-align: center;
+}
+
+.content{
+    margin-top: 40px;
+    margin-right: 0px;
+    background-color: #FFF8E8;
+    border: 1px solid #AAB396;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.AssignImg{
+    width: 600px;
+}
+
+hr{
+    border: 2px solid #674636;
+}
+
+h1, h2 {
+    font-weight: 600;
+    color: #674636;
+}
+
+h1 {
+    font-size: 3rem; /* ขนาดฟอนต์ใหญ่สุดสำหรับ H1 */
+}
+
+h2 {
+    font-size: 2rem; /* ขนาดเล็กลงสำหรับ H2 */
+}
+
+p {
+    font-weight: 300;
+    line-height: 1.6; /* เพิ่มการเว้นบรรทัดให้สบายตา */
+    color: #333; /* สีของข้อความทั่วไป */
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.cenPic {
+    display: block; /* เพื่อให้สามารถใช้ margin auto */
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%; /* ให้ภาพไม่กว้างเกินหน้าจอ */
+    height: auto; /* ปรับขนาดให้ภาพไม่บิดเบี้ยว */
+}
+
+/* ปรับแต่งรายการ ul */
+ul {
+    list-style-type: none; /* เอา bullet point ออก */
+    padding: 0; /* เอา padding ด้านในออก */
+    margin: 20px 0; /* เพิ่มช่องว่างระหว่างรายการ */
+    text-align: center; /* จัดให้อยู่กลาง */
+}
+
+/* ปรับแต่งรายการ li */
+li {
+    background-color: #F7EED3; /* สีพื้นหลังที่นุ่มนวล */
+    padding: 15px; /* เพิ่ม padding ในรายการ */
+    margin-bottom: 10px; /* เพิ่มช่องว่างระหว่างรายการ */
+    border-radius: 8px; /* ทำให้มุมของกล่องโค้งมน */
+    border: 1px solid #AAB396; /* เพิ่มเส้นขอบบาง ๆ */
+    font-size: 1.1rem; /* ปรับขนาดฟอนต์ */
+    color: #333; /* สีฟอนต์ */
+    transition: background-color 0.3s ease; /* เพิ่มเอฟเฟกต์การเปลี่ยนสี */
+}
+
+/* เพิ่มเอฟเฟกต์ hover */
+li:hover {
+    background-color: #AAB396; /* เปลี่ยนสีพื้นหลังเมื่อ hover */
+    color: #AAB396; /* เปลี่ยนสีฟอนต์เมื่อ hover */
+}
+
+/* สำหรับหน้าจอขนาดเล็ก (เช่น มือถือ) */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* ลดขนาดฟอนต์บนหน้าจอเล็ก */
+    }
+
+    #header-container {
+        flex-direction: column; /* จัดรูปและชื่อให้อยู่บน-ล่างเมื่อหน้าจอเล็ก */
+        align-items: center;
+    }
+
+    .PortImg {
+        width: 150px; /* ปรับขนาดรูปภาพให้เล็กลงสำหรับมือถือ */
+    }
+
+    #Fname, #Lname {
+        font-size: 6vw; /* ปรับฟอนต์ชื่อให้ใหญ่ขึ้นสำหรับมือถือ */
+        margin-left: 0; /* จัดให้อยู่กึ่งกลาง */
+        text-align: center;
+    }
+
+    #Hobbies, #Interests, #Skills {
+        font-size: 1rem; /* ลดขนาดฟอนต์สำหรับรายการในหน้าจอเล็ก */
+    }
+
+    .grid-container {
+        width: 100%; /* ปรับให้กล่องคอนเทนต์ครอบคลุมเต็มหน้าจอ */
+        padding: 10px;
+    }
+
+    .AssignImg {
+        width: 100%; /* ทำให้รูปขยายตามขนาดหน้าจอเล็ก */
+    }
+
+    li {
+        font-size: 1rem; /* ลดขนาดฟอนต์ของรายการ */
+        padding: 10px;
+    }
+}
+
+/* สำหรับหน้าจอขนาดกลาง (เช่น แท็บเล็ต) */
+@media (max-width: 1024px) {
+    body {
+        font-size: 15px; /* ลดขนาดฟอนต์เล็กน้อย */
+    }
+
+    #Fname, #Lname {
+        font-size: 5vw;
+    }
+
+    .PortImg {
+        width: 200px; /* ปรับขนาดรูปภาพให้เหมาะสมกับแท็บเล็ต */
+    }
+
+    li {
+        font-size: 1.1rem;
+    }
+
+    .grid-container {
+        width: 95%;
+    }
+}
